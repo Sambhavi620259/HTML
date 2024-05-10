@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form </title>
+    <link rel="stylesheet" href="registration .css">
+</head>
+<body>
+        <form action="action_page.php">
+          <div class="container">
+              <h1>Registration</h1>
+              <p>Please fill in the form for registration</p>
+              <hr>
+  
+              <span class="details"><b>Full Name</b></span>
+              <input type="text" placeholder="Enter your name" required>
+  
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" id="email" required>
+  
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter password" name="psw" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+  
+              <label for="psw"><b>Confirm Password</b></label>
+              <input type="password" placeholder="Enter password" name="psw" id="psw" required>
+  
+              <span class="gender-title"><b>Gender</b></span>
+              <div class="category">
+                  <input type="radio" name="gender" value="female">Female
+                  <input type="radio" name="gender" value="male">Male
+                  <input type="radio" name="gender" value="others">Others
+              </div>
+              <br>
+  
+              <label for="state"> <b>Select Your state</b></label>
+              <select name="state" id="state">
+                  <option value=""></option>
+                  <option value="karnatka">Karnatka</option>
+                  <option value="Bihar">Bihar</option>
+                  <option value="West Bengal">West Bengal</option>
+                  <option value="Goa">Goa</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" width="10px">
+          </div>
+      </form>
+      <div id="message">
+        <h3>Password must contain the following:</h3>
+        <p id="letter" class="invalid">A<b> lower case</b>letter</p>
+        <p id="capital" class="invalid">A<b> capital(uppercase)</b>letter</p>
+        <p id="number" class="invalid">A<b> number</b></p>
+        <p id="length" class="invalid">Minimum<b>8 characters</b></p>
+      </div>  
+</body>
+</html>
