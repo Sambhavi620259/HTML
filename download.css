@@ -1,3 +1,35 @@
+/* portfolio.css */
+
+/* Reset default margin and padding */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the download container */
+.download-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Style the download button */
+.download-container {
+    display: inline-block;
+    background-color: #007bff; /* Choose your desired button color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+}
+
+/* Add hover effect to the button */
+.download-button:hover {
+    background-color: #0056b3; /* Darker shade of the button color on hover */
+}
+
+/* General styling */
 * {
     padding: 0;
     margin: 0;
@@ -6,13 +38,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background:url(540634.jpg);
+    background: url('540634.jpg'); /* Fixed typo here */
     color: #fff;
     line-height: 1.6;
 }
 
 header {
-    background:url("bkgd.avif");
+    background: url("bkgd.avif");
     background-size: cover;
     color: #fff;
     padding: 40px 0;
@@ -23,6 +55,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 20px;
 }
 
 .logo {
@@ -67,7 +100,6 @@ nav {
     font-size: 1.2em;
 }
 
-
 main {
     padding: 50px;
 }
@@ -94,7 +126,6 @@ h3 {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 
 form {
     margin-top: 20px;
@@ -136,7 +167,6 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
-
 
 #about {
     display: flex;
@@ -181,8 +211,12 @@ footer {
     color: white;
 }
 
-/* Add this CSS to your sambhavi.css file */
+/* Additional styling for download button */
+.menu a.resume-download {
+    color: pink; /* Changing color for this specific link */
+}
 
+/* Adding styling for the resume download section */
 .resume-download {
     background-image: url('bkgd.avif');
     background-size: cover;
@@ -206,10 +240,7 @@ footer {
 }
 
 /* Remove hover effect for download button */
-.resume-download button:hover {
+.resume-download a:hover {
     background-color: white;
     color: initial;
-}
-.menu a:hover:not(.resume-download) {
- color: pink;
 }
